@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tailwind Project</title>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div class="">
+            <img src="assets/logo1.jpeg" class="w-32 rounded-lg" />
+          </div>
+          
+          <nav class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-foreground hover:text-primary transition-colors">
+              Home
+            </a>
+            <a href="#about" class="text-foreground hover:text-primary transition-colors">
+              About
+            </a>
+            <a href="#features" class="text-foreground hover:text-primary transition-colors">
+              Features
+            </a>
+            <a href="#how-it-works" class="text-foreground hover:text-primary transition-colors">
+              How It Works
+            </a>
+            <a href="#testimonials" class="text-foreground hover:text-primary transition-colors">
+              Testimonials
+            </a>
+          </nav>
+          
+          <div class="flex items-center space-x-4">
+            <button class="bg-[#052a67] text-white px-4 py-2 rounded-lg">Get Started</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero section  -->
+      <section id="home" class="min-h-screen flex items-center pt-20 bg-cover " style="background-image: url('assets/bg.png');">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-8">
+              <h1 class="text-5xl lg:text-7xl font-bold leading-tight">
+                Earn While
+                <span class="block bg-gradient-to-r from-white to-primary-light bg-clip-text text-transparent">
+                  Finding Love
+                </span>
+              </h1>
+              <p class="text-xl lg:text-2xl text-white/90 leading-relaxed">
+                Join the revolutionary platform where meaningful connections lead to financial rewards. 
+                Find your perfect match while building your future together.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" class="bg-white/10 text-primary hover:bg-white/5 text-lg px-8 py-6">
+                  Start Earning Today
+                </Button>
+              </div>
+              <div class="flex items-center space-x-8 text-white/80">
+                <div class="text-center">
+                  <div class="text-3xl font-bold">10K+</div>
+                  <div class="text-sm">Happy Couples</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold">$2M+</div>
+                  <div class="text-sm">Earned Together</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold">98%</div>
+                  <div class="text-sm">Success Rate</div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img 
+                src="assets/herro.png"
+                alt="Happy couple earning together" 
+                class="rounded-2xl shadow-2xl w-full max-w-lg mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us section  -->
+      <section id="about" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+              <div class="space-y-4">
+                <h2 class="text-4xl lg:text-5xl text-[#052861] font-bold text-foreground">
+                  About MIAMOR
+                </h2>
+                <div class="w-20 h-1 bg-gradient-primary rounded-full"></div>
+              </div>
+              
+              <p class="text-lg leading-relaxed text-[#7d8b9e]">
+                MIAMOR is the world's first platform that combines meaningful dating with financial opportunities. 
+                We believe that love and prosperity go hand in hand, and we've created a unique ecosystem where 
+                finding your soulmate can also build your financial future.
+              </p>
+              
+              <p class="text-lg text-[#7d8b9e] leading-relaxed">
+                Founded in 2024, our mission is to revolutionize how people approach relationships and financial 
+                growth. Through our innovative reward system, couples earn together while building lasting connections 
+                that matter.
+              </p>
+              
+              <div class="grid grid-cols-2 gap-6">
+                <div class="text-center p-6 bg-card rounded-lg border">
+                  <div class="text-3xl font-bold text-primary mb-2 text-[#052861]">2024</div>
+                  <div class="text-sm text-muted-foreground">Founded</div>
+                </div>
+                <div class="text-center p-6 bg-card rounded-lg border">
+                  <div class="text-3xl font-bold text-primary mb-2 text-[#052861]">50+</div>
+                  <div class="text-sm text-muted-foreground">Countries</div>
+                </div>
+              </div>
+              
+              <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-[#052861]">Our Values</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <span class="text-muted-foreground">Authentic connections over superficial matches</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <span class="text-muted-foreground">Financial empowerment through partnership</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <span class="text-muted-foreground">Transparency in all our processes</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <span class="text-muted-foreground">Building communities, not just couples</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="relative">
+              <img 
+              src="assets/hero.jpeg"
+                alt="Our team working together" 
+                class="rounded-2xl shadow-2xl w-full"
+              />
+              <div class="absolute inset-0 bg-gradient-primary/10 rounded-2xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section  -->
+      <section id="features" class="py-20 bg-card">
+        <div class="container mx-auto px-4">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Powerful Features
+            </h2>
+            <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Discover how LoveEarn combines cutting-edge technology with human connection 
+              to create an unprecedented dating experience
+            </p>
+          </div>
+      
+          <!-- Main Feature Image + Description -->
+          <div class="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            <div class="relative">
+              <img 
+              src="assets/features.jpeg" 
+                alt="LoveEarn app features" 
+                class="rounded-2xl shadow-2xl w-full"
+              />
+              <div class="absolute -top-6 -right-6 bg-primary text-white p-4 rounded-full">
+                <span class="text-2xl">📱</span>
+              </div>
+            </div>
+      
+            <div class="space-y-6">
+              <h3 class="text-3xl font-bold text-foreground">
+                Everything You Need to Find Love &amp; Earn
+              </h3>
+              <p class="text-lg text-muted-foreground">
+                Our platform is designed to make dating rewarding in every sense. From intelligent 
+                matching to earning opportunities, we've thought of everything.
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="text-xl">✓</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-foreground">Verified Profiles</h4>
+                    <p class="text-muted-foreground">Every profile is verified for authenticity and safety</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="text-xl">✓</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-foreground">Real-time Earning</h4>
+                    <p class="text-muted-foreground">See your earnings grow in real-time as you connect</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="text-xl">✓</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-foreground">24/7 Support</h4>
+                    <p class="text-muted-foreground">Our team is here to help you succeed in love and earnings</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Features Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">💕</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Smart Matching</h3>
+              <p class="text-muted-foreground">
+                AI-powered algorithm that finds your perfect match based on compatibility and earning potential
+              </p>
+            </div>
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">💰</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Earning Rewards</h3>
+              <p class="text-muted-foreground">
+                Earn points and real money for meaningful interactions, dates, and relationship milestones
+              </p>
+            </div>
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">📱</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Mobile First</h3>
+              <p class="text-muted-foreground">
+                Seamless experience across all devices with our intuitive mobile-first design
+              </p>
+            </div>
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">🔒</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Secure &amp; Private</h3>
+              <p class="text-muted-foreground">
+                Bank-level security ensures your data and earnings are always protected
+              </p>
+            </div>
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">🏆</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Achievement System</h3>
+              <p class="text-muted-foreground">
+                Unlock rewards and bonuses as you progress through relationship milestones
+              </p>
+            </div>
+            <div class="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <div class="text-4xl mb-4">💬</div>
+              <h3 class="text-xl font-semibold text-foreground mb-3">Couple Challenges</h3>
+              <p class="text-muted-foreground">
+                Complete fun challenges together and earn bonus rewards as a couple
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pricing section  -->
+      <section class="py-20 bg-[#052a67]">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto mb-16 text-white">
+            <h2 class="text-4xl font-bold mb-6">
+              Simple, Transparent Pricing
+            </h2>
+            <p class="text-xl">
+              Choose the perfect plan for your journey to love and earnings. 
+              All plans include our unique matching algorithm and earning opportunities.
+            </p>
+          </div>
+          
+          <div class="flex justify-center">
+            <div class="max-w-4xl mx-auto">
+              <img 
+                src="assets/pricing.jpeg" 
+                alt="Pricing plans showing different subscription tiers and features"
+                class="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cta section  -->
+      <section class="py-20 bg-[#052a67] text-white">
+        <div class="container mx-auto px-4 text-center">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl lg:text-6xl font-bold mb-6">
+              Your Love Story
+              <span class="block bg-gradient-to-r from-white to-primary-light bg-clip-text text-transparent">
+                Starts Here
+              </span>
+            </h2>
+            
+            <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
+              Join over 10,000 singles who are already earning while finding their perfect match. 
+              Your journey to love and financial freedom begins with a single click.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+              <button class="bg-white text-primary hover:bg-white/90 px-10 py-5 rounded-lg font-bold text-lg transition-colors">
+                Start Earning Today - Free
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section  -->
+      <footer class="bg-[#020817] text-white py-16">
+        <div class="container mx-auto px-4">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Logo & description -->
+            <div class="space-y-4">
+              <div class="">
+                <span class="text-2xl font-bold">MIAMOR</span>
+              </div>
+              <p class="text-white/80">
+                The world's first platform where finding love leads to financial rewards. 
+                Join thousands of happy couples earning together.
+              </p>
+              <div class="flex space-x-4">
+                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                  <span>📘</span>
+                </div>
+                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                  <span>🐦</span>
+                </div>
+                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                  <span>📷</span>
+                </div>
+                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">
+                  <span>💼</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Product -->
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Product</h3>
+              <ul class="space-y-2 text-white/80">
+                <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">How It Works</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Success Stories</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Mobile App</a></li>
+              </ul>
+            </div>
+      
+            <!-- Support -->
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Support</h3>
+              <ul class="space-y-2 text-white/80">
+                <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Safety</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Community Guidelines</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+      
+            <!-- Company -->
+            <div>
+              <h3 class="font-semibold text-lg mb-4">Company</h3>
+              <ul class="space-y-2 text-white/80">
+                <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Partnerships</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Bottom bar -->
+          <div class="border-t border-white/20 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <div class="text-white/60">
+                © 2024 MIAMOR. All rights reserved.
+              </div>
+              <div class="flex space-x-8 text-white/60">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+</body>
+</html>
