@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiAmor Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 flex justify-center py-10">
+  <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg">
+    <!-- Stepper -->
+    <div class="flex items-center mb-6">
+      <div class="flex-1 flex items-center">
+        <div id="step1Circle" class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center font-bold">1</div>
+        <div class="flex-1 h-1 bg-red-500"></div>
+        <div id="step2Circle" class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-bold">2</div>
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-xl font-bold text-center">Activate your MiAmor Account</h2>
+    <p class="text-center text-gray-500 mb-6">Complete these steps to activate your account</p>
+
+    <!-- Step Content -->
+    <div id="stepContent">
+      <!-- Step 1 -->
+      <div id="step1" class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-700">Make Payment</h3>
+        <p>Please transfer the registration fee to the account below:</p>
+
+        <div class="bg-red-50 border border-red-100 rounded-lg p-4 space-y-2">
+          <p><strong>Bank Name:</strong> KUDA Bank</p>
+          <p><strong>Account Number:</strong> 2053843373</p>
+          <p><strong>Account Name:</strong> OSAKWE MARVELLOUS ISIOMA</p>
+          <p><strong>MiAmor Plus:</strong> ₦10,000.00</p>
+          <p><strong>MiAmor Ultra:</strong> ₦14,000.00</p>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-gray-600">
+          Take a screenshot of the receipt after payment.  
+          <strong>NOTE:</strong> Opay is not allowed for payment. You can use any other Nigerian banks but don’t use Opay.
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div id="step2" class="space-y-4 hidden">
+        <h3 class="text-lg font-semibold text-gray-700">Confirm Payment</h3>
+        <p>After payment, send a screenshot to our vendor for confirmation. You'd get your Unique Code for registration and also be given access to the VIP GROUP immediately</p>
+
+        <div class="max-w-sm mx-auto space-y-4">
+            <!-- Telegram Button -->
+            <a href="https://t.me/Miamor_Official1?text=Hello%20Bella%2C%20I%20am%20here%20for%20miamor%20code"
+                onclick="document.getElementById('myModal').classList.add('hidden')" target="_blank"
+                class="block w-full text-center bg-[#0088cc] text-white font-bold py-4 rounded-lg hover:opacity-90 transition">
+                Telegram Vendor
+            </a>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/+2349027952494?text=Hello%20Bella%2C%20I%20am%20here%20for%20miamor%20code"
+                onclick="document.getElementById('myModal').classList.add('hidden')" target="_blank"
+                class="block w-full text-center bg-[#25D366] text-white font-bold py-4 rounded-lg hover:opacity-90 transition">
+                WhatsApp Vendor
+            </a>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3 pl-5 text-sm text-gray-600">
+            Include these details in your message:
+          <ul style="list-style-type: circle;">
+            <li>Your full Name</li>
+            <li>Screen shot Payment reciept</li>
+            <li>Email</li>
+            <li>Plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-between mt-6">
+      <button id="backBtn" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Back</button>
+      <button id="nextBtn" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const nextBtn = document.getElementById("nextBtn");
+    const backBtn = document.getElementById("backBtn");
+    const step1Circle = document.getElementById("step1Circle");
+    const step2Circle = document.getElementById("step2Circle");
+
+    let currentStep = 1;
+
+    nextBtn.addEventListener("click", () => {
+      if (currentStep === 1) {
+        step1.classList.add("hidden");
+        step2.classList.remove("hidden");
+        step1Circle.classList.remove("bg-red-500", "text-white");
+        step1Circle.classList.add("bg-gray-200", "text-gray-600");
+        step2Circle.classList.remove("bg-gray-200", "text-gray-600");
+        step2Circle.classList.add("bg-red-500", "text-white");
+        currentStep = 2;
+      }
+    });
+
+    backBtn.addEventListener("click", () => {
+      if (currentStep === 2) {
+        step2.classList.add("hidden");
+        step1.classList.remove("hidden");
+        step2Circle.classList.remove("bg-red-500", "text-white");
+        step2Circle.classList.add("bg-gray-200", "text-gray-600");
+        step1Circle.classList.remove("bg-gray-200", "text-gray-600");
+        step1Circle.classList.add("bg-red-500", "text-white");
+        currentStep = 1;
+      }
+    });
+  </script>
+</body>
+</html>

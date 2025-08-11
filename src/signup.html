@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>MIAMOR</title>
+</head>
+<body class="bg-gray-100">
+  <!-- Full screen flexbox center -->
+   <div class="flex-col">
+    <div class="flex items-center justify-center min-h-screen">
+    <form class="space-y-6 w-full max-w-xl bg-white p-6 rounded-lg shadow">
+        <div class="text-[#052861] text-center tex-2xl">Join MiAmor</div>
+
+      <!-- Email -->
+      <div class="space-y-2">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm placeholder-gray-400 
+                 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          required
+        >
+        <p class="text-sm text-red-500 hidden">Please enter a valid email.</p>
+      </div>
+
+      <!-- Username -->
+      <div class="space-y-2">
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="Choose a username"
+          class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm placeholder-gray-400 
+                 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          required
+        >
+        <p class="text-sm text-red-500 hidden">Username is required.</p>
+      </div>
+
+      <!-- Password -->
+      <div class="space-y-2">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Create a secure password"
+          class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm placeholder-gray-400 
+                 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          required
+        >
+        <p class="text-sm text-red-500 hidden">Password must be at least 8 characters.</p>
+      </div>
+
+      <!-- Plan -->
+      <div class="space-y-2">
+        <label for="plan" class="block text-sm font-medium text-gray-700">Plan</label>
+        <select
+          id="plan"
+          name="plan"
+          class="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm 
+                 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          required
+        >
+          <option value="" disabled selected>Select plan</option>
+          <option value="starter">My ultra love</option>
+          <option value="premium">My love plus</option>
+        </select>
+        <p class="text-sm text-red-500 hidden">Please select a plan.</p>
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="w-full bg-[#052861] hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+      >
+        Create Account
+      </button>
+
+      <p class="text-[#052861] text-base text-center mt-1">Don't have a code?
+        <a href="payments.html" class="text-buttons font-semibold hover:underline">Get a code</a>
+    </p>
+    </form>
+  </div>
+   </div>
+  
+</body>
+</html>
